@@ -1,0 +1,50 @@
+.titulo {
+    color: red;
+}
+
+.titulo h1 {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+.list-order {
+    background-color: yellow;
+    font-weight: 600;
+}
+
+.par {
+    color: green;
+}
+
+.impar {
+    text-transform: uppercase;
+}
+
+li {
+    font-size: 20px;
+}
+
+.primeira {
+    color: blue;
+}
+
+.jav {
+    background-color: pink;
+}
+
+#so:hover {
+    background-color: orange;
+}
+
+#w3:hover, #trybe:hover {
+    background-color: green;
+}
+
+#mdn:hover {
+    background-color: black;
+    color: white;
+}
+
+#dd:hover {
+    background-color: yellow;
+}
