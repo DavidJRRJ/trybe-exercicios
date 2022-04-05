@@ -25,6 +25,8 @@ aside {
 
 aside h2 {
     margin-top: 30px;
+    text-decoration: underline;
+    font-size: 25px;
 
 }
 
