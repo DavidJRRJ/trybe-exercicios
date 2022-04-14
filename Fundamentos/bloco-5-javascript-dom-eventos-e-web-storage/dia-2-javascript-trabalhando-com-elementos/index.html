@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // 1 -
+      let corpo = document.body;
+      let titulo = document.createElement("h1");
+      titulo.innerText = "Exercício 5.2 - JavaScript DOM";
+      corpo.appendChild(titulo);
+      // 2 -
+      let principal = document.createElement("main");
+      principal.className = "main-content";
+      corpo.appendChild(principal);
+      // 3 -
+      let setor = document.createElement("section");
+      setor.className = "center-content";
+      principal.appendChild(setor);  
+      // 4 - 
+      let txt = document.createElement("p");
+      txt.innerText = "Texto qualquer";  
+      setor.appendChild(txt);  
+      // 5 -
+      let setorE = document.createElement("section");
+      setorE.className = "left-content";
+      principal.appendChild(setorE);
+      // 6 - 
+      let setorR = document.createElement("section");
+      setorR.className = "right-content";
+      principal.appendChild(setorR);
+      // 7 -
+      let imagem = document.createElement("img");
+      imagem.src = "https://picsum.photos/200";
+      imagem.className = "small-image";
+      setorE.appendChild(imagem);
+      // 8 - 
+      let lista = document.createElement("ul");
+      let listaC = document.createElement('li');
+      for (let i = 0; i < 11; i++){
+        listaC.innerText[i] = "teste";
+      }
+      lista.appendChild(listaC);
+      setorR.appendChild(lista);
+
+    </script>
+  </body>
+</html>
