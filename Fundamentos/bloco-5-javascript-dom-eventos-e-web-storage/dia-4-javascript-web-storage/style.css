@@ -1,0 +1,23 @@
+body {
+    background-color: blue;
+    
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+
+}
+
+.botoes {
+    display: inline-block;
+    text-align: center;
+    margin-left: 40%;
+    
+}
