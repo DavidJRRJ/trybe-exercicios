@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Página de Cadastro</h1>
+    </header>
+
+    <main>
+        <form action="" method="post">
+            
+            <div class="separador">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            </div>
+            <div class="separador">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            </div>
+            
+            <div id="radio-button">
+            <label for="opcao1">Opção 1</label>
+            <input type="radio" name="opcoes" id="opcao1">
+            <label for="opcao1">Opção 2</label>
+            <input type="radio" name="opcoes" id="opcao2">
+            <label for="opcao1">Opção 3</label>
+            <input type="radio" name="opcoes" id="opcao3">
+            <label for="opcao1">Opção 4</label>
+            <input type="radio" name="opcoes" id="opcao4">
+            </div>
+
+            <div class="separador">
+            <div class="separador"><label for="texto">Espaço para digitar a resposta:</label></div>
+            <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+            </div>
+            
+            <div class="separador">
+            <label for="data">Data:</label>
+            <input type="date" name="data" id="data">
+            </div>
+
+            <div class="separador">
+            <label for="concorda1">Concordo 1</label>
+            <input type="checkbox" name="concorda" id="concorda1">
+            <label for="concorda1">Concordo 2</label>
+            <input type="checkbox" name="concorda" id="concorda2">
+            </div>
+        </form>
+
+        <div class="botoes">
+        <button>Enviar</button>
+        <button>Apagar</button>
+        </div>
+    </main>
+</body>
+</html>

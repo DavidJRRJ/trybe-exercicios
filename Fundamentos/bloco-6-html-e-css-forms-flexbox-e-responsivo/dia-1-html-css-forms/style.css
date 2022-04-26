@@ -1,0 +1,28 @@
+.separador {
+    
+    margin-bottom: 10px;
+}
+
+#radio-button {
+    margin-bottom: 10px;
+}
+
+form {
+    border: 2px solid black;
+    padding: 15px;
+    width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+
+.botoes {
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
