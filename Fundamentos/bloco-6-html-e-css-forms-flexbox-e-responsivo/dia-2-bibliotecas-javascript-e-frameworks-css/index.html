@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Cadastro</title>
+</head>
+<body class="container">
+    
+    <header class="field">
+        <h1 class="title">Página de Cadastro</h1>
+    </header>
+
+    <main>
+        <form action="" method="post">
+            
+            <div class="field">
+            <label for="nome" class="label">Nome:</label>
+            <input type="text" name="nome" class="input is-success" placeholder="Digite seu nome">
+            
+            </div>
+            <div class="field">
+            <label for="email" class="label">Email:</label>
+            <input type="email" name="email" class="input is-danger">
+            </div>
+            
+            <div id="radio-button" class="field">
+            <label for="opcao1" class="radio">Opção 1</label>
+            <input type="radio" name="opcoes" id="opcao1">
+            <label for="opcao2" class="radio">Opção 2</label>
+            <input type="radio" name="opcoes" id="opcao2">
+            <label for="opcao3">Opção 3</label>
+            <input type="radio" name="opcoes" id="opcao3">
+            <label for="opcao4" class="radio">Opção 4</label>
+            <input type="radio" name="opcoes" id="opcao4">
+            </div>
+
+            <div class="field">
+            <label for="texto" class="label">Espaço para digitar a resposta:</label>
+            <textarea name="texto" id="texto" class="textarea" cols="30" rows="10"></textarea>
+            </div>
+            
+            <div class="field">
+            <label for="data">Data:</label>
+            <input type="date" name="data" id="data">
+            </div>
+
+            <div class="field">
+            <label for="concorda1" class="checkbox">Concordo 1</label>
+            <input type="checkbox" name="concorda" id="concorda1">
+            <label for="concorda1" class="checkbox">Concordo 2</label>
+            <input type="checkbox" name="concorda" id="concorda2">
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <button class="button is-link">Enviar</button>
+                    <button class="button is-link is-light">Apagar</button>
+                </div>
+           
+            </div>
+        </form>
+
+       
+    </main>
+</body>
+</html>
