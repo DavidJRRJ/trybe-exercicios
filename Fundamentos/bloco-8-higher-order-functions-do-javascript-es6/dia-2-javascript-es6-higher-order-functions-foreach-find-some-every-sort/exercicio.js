@@ -70,6 +70,23 @@ const books = [
 
   //console.log(authorBornIn1947());
 
+// Exercício 2 -
+
+function smallerName() {
+  let nameBook = 0;
+  // escreva aqui o seu código
+
+  books.forEach((book) => {
+    if (nameBook == 0 || book.name.length < nameBook.length) {
+      nameBook = book.name;
+    }
+  });
+  // Variável nameBook que receberá o valor do menor nome;
+  return nameBook;
+}
+
+//console.log(smallerName());
+
 // Exercício 3 -
 
 function getNamedBook() {
@@ -108,3 +125,11 @@ function someBookWasReleaseOnThe80s() {
 
 // Exercício 7 -
 
+function authorUnique() {
+  return books.every((book) =>
+    !books.some((bookSome) =>
+      (bookSome.author.birthYear === book.author.birthYear)
+      && (bookSome.author.name !== book.author.name)));
+}
+
+console.log(authorUnique())
